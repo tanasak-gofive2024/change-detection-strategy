@@ -5,6 +5,7 @@ import {
   ElementRef,
   ViewEncapsulation,
   inject,
+  input,
   signal,
 } from '@angular/core';
 import { BehaviorSubject, fromEvent } from 'rxjs';
@@ -17,11 +18,11 @@ import { BaseNodeComponent } from './base-node.component';
   imports: [AsyncPipe],
   template: `
     <span class="node-label" [style.background-color]="color"
-      >13 - {{ counterService.counter() }}</span
-    >
+      >13 - {{ counterService.counter() }}
+    </span>
   `,
   styles: ``,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  // changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.None,
 })
 export class ThirteenComponent extends BaseNodeComponent {

@@ -15,7 +15,7 @@ import { TwoComponent } from './components/two.component';
   standalone: true,
   imports: [TwoComponent, ThreeComponent, ParentComponent],
   encapsulation: ViewEncapsulation.None,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  // changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent extends BaseNodeComponent {
   title = 'Code Shots With Profanis - Like and Subscribe :)';

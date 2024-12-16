@@ -7,6 +7,7 @@ import { BehaviorSubject } from 'rxjs';
 export class CounterService {
   #counterBs = new BehaviorSubject<number>(0);
   #counter = signal(0);
+  count = 0
 
   counter$ = this.#counterBs.asObservable();
   counter = this.#counter.asReadonly();
@@ -14,10 +15,12 @@ export class CounterService {
   increaseCounter() {
     this.#counterBs.next(this.#counterBs.value + 1);
     this.#counter.update((value) => value + 1);
+    this.count += 1;
   }
 
   decreaseCounter() {
     this.#counterBs.next(this.#counterBs.value - 1);
     this.#counter.update((value) => value - 1);
+    this.count -= 1;
   }
 }

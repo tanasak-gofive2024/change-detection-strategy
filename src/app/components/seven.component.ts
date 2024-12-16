@@ -24,7 +24,7 @@ import { TwelveComponent } from './twelve.component';
   styles: `
 
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  // // changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.None,
 })
 export class SevenComponent extends BaseNodeComponent {
@@ -38,5 +38,5 @@ export class SevenComponent extends BaseNodeComponent {
     //   this.counterSignal.set(this.counterSignal() + 1);
     //   // this.counter.next(this.counter.value + 1);
     // }, 1000);
-  }
+  }  
 }

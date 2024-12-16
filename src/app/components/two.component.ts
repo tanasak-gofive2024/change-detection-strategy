@@ -28,7 +28,7 @@ import { FourComponent } from './four.component';
   `,
   styles: `
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  // changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.None,
 })
 export class TwoComponent extends BaseNodeComponent {
